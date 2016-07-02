@@ -4,8 +4,12 @@ import coreModule from './core';
 import commonModule from './common'
 import newsModule from './news';
 
+import appComponent from './app.component';
 
-const appModule = angular.module('rApp',[coreModule, commonModule, newsModule]);
+
+const appModule = angular
+  .module('rApp',[coreModule, commonModule, newsModule])
+  .component('app', appComponent);
 
   angular
     .element(document)
