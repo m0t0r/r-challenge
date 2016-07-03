@@ -5,7 +5,7 @@ import commonModule from './common'
 import newsModule from './news';
 
 import appComponent from './app.component';
-
+import './assets/css/styles.css';
 
 const appModule = angular
   .module('rApp',[coreModule, commonModule, newsModule])
