@@ -6,7 +6,11 @@ class rNewsPanelCtrl { }
 let rNewsPanelComponent = {
   transclude: true,
   controller: rNewsPanelCtrl,
-  template
+  template,
+  bindings: {
+    title: '<',
+    onLoadData: '&'
+  }
 };
 
 export default rNewsPanelComponent;
