@@ -13,8 +13,8 @@ class rListCtrl {
     var newHeight = this.collapsed ? 0 : this._getElementAutoHeight();
 
     this.rListItemFullElm.style.height = newHeight + 'px';
-    
-    this.onSelectedItem({item: itemData});
+
+    this.collapsed ? this.onSelectedItem({item: null}) : this.onSelectedItem({item: itemData});
   }
 
   _getElementAutoHeight() {

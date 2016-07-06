@@ -5,6 +5,7 @@ import commonModule from './common'
 import newsModule from './news';
 
 import appComponent from './app.component';
+import 'style!css!animate.css/animate.css';
 import './assets/css/styles.css';
 
 const appModule = angular

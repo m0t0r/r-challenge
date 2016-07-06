@@ -2,3 +2,27 @@ body {
   font-family: 'Open Sans', sans-serif;
   background: #eee;
 }
+
+r-news-panel {
+  display: block;
+  width: 70%;
+  margin: 100px auto;
+}
+
+r-news-panel .r-news-panel-content {
+  min-height: 400px;
+}
+
+r-list-item {
+  display: block;
+}
+
+r-list-item.ng-enter {
+  animation-name: bounceInLeft;
+  animation-duration: .5s;
+}
+
+r-list-item.ng-enter-stagger {
+  animation-delay: .1s;
+  animation-duration: 0s;
+}

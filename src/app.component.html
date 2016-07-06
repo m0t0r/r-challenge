@@ -1,10 +1,10 @@
 <preview-description class="app-container">
   <r-news-panel title="$ctrl.selectedItem.title" on-load-data="$ctrl.loadNews()">
-    <r-list on-selected-item="$ctrl.setSelectedItem(item)" test="'works!'">
-      <r-list-item item-data="new" ng-repeat="new in $ctrl.news">
+    <r-list on-selected-item="$ctrl.setSelectedItem(item)">
+      <r-list-item class="news" item-data="new" ng-repeat="new in $ctrl.news">
         <r-list-item-preview>
           <img r-preview-icon ng-src="{{ new.image }}" alt="News Preview">
-          <preview-description>{{ new.content | limitTo:75}}...</preview-description>
+          <preview-description>{{ new.title | uppercase | limitTo:45}}...</preview-description>
         </r-list-item-preview>
         <r-list-item-full>
           <img r-full-icon ng-src="{{ new.image }}" alt="News Full">
