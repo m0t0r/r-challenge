@@ -1,12 +1,16 @@
 class NewsService {
 
-  constructor($http) {
+  constructor($http, $timeout) {
     this.$http = $http;
+    this.$timeout = $timeout;
   }
 
   getNews() {
-    // replace path to mock data with a real API endpoint
-    return this.$http.get('src/common/services/news_mock.json');
+    // simulate slight network delay
+    return this.$timeout(() => {
+      // replace path to mock data with a real API endpoint
+      return this.$http.get('src/common/services/news_mock.json');
+    }, 1000);
   }
 
 }

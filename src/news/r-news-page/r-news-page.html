@@ -1,5 +1,6 @@
 <div class="r-news-page">
   <r-news-panel title="$ctrl.selectedItem.title" on-load-data="$ctrl.loadNews()" ng-class="{'loaded': $ctrl.loaded}">
+    <r-spinner loading="$ctrl.loading"></r-spinner>
     <r-list on-selected-item="$ctrl.setSelectedItem(item)">
       <r-list-item class="news" item-data="new" ng-repeat="new in $ctrl.news">
         <r-list-item-preview>

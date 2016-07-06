@@ -15,8 +15,11 @@ class rNewsPageCtrl {
   }
 
   loadNews() {
+    this.loading = true;
+    this.news = null;
     this.newsService.getNews().then((response) => {
       this.news = response.data;
+      this.loading = false;
     })
   }
 

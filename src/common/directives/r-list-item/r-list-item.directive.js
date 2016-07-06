@@ -14,7 +14,7 @@ let rListItemDirective = () => {
   return {
     require: '^rList',
     scope: {
-      itemData: '='
+      itemData: '<'
     },
     transclude: {
       previewSlot: '?rListItemPreview',
