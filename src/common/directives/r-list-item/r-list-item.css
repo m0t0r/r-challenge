@@ -31,6 +31,7 @@ r-list-item-full {
   background: #fff;
   margin-bottom: 10px;
   display: flex;
+  flex-direction: row;
   height: 0;
   overflow: hidden;
   transition: height 0.3s;
@@ -42,7 +43,7 @@ img[r-full-icon] {
 
 full-news-text-area {
   display: block;
-  padding: 5px;
+  padding: 15px;
 }
 
 full-news-text-area full-news-title {
@@ -53,4 +54,12 @@ full-news-text-area full-news-title {
 full-news-text-area full-news-description {
   display: block;
   font-size: 14px;
+}
+
+@media screen and (max-width: 30em) {
+
+  img[r-preview-icon] {
+    width: 45px;
+    height: 45px;
+  }
 }

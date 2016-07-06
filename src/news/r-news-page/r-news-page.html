@@ -1,17 +1,19 @@
-<r-news-panel title="$ctrl.selectedItem.title" on-load-data="$ctrl.loadNews()" ng-class="{'loaded': $ctrl.loaded}">
-  <r-list on-selected-item="$ctrl.setSelectedItem(item)">
-    <r-list-item class="news" item-data="new" ng-repeat="new in $ctrl.news">
-      <r-list-item-preview>
-        <img r-preview-icon ng-src="{{ new.image }}" alt="News Preview">
-        <preview-description>{{ new.title | uppercase | limitTo:45}}...</preview-description>
-      </r-list-item-preview>
-      <r-list-item-full>
-        <img r-full-icon ng-src="{{ new.image }}" alt="News Full">
-        <full-news-text-area>
-          <full-news-title>{{ new.title }}</full-news-title>
-          <full-news-description>{{ new.content }}</full-news-description>
-        </full-news-text-area>
-      </r-list-item-full>
-    </r-list-item>
-  </r-list>
-</r-news-panel>
+<div class="r-news-page">
+  <r-news-panel title="$ctrl.selectedItem.title" on-load-data="$ctrl.loadNews()" ng-class="{'loaded': $ctrl.loaded}">
+    <r-list on-selected-item="$ctrl.setSelectedItem(item)">
+      <r-list-item class="news" item-data="new" ng-repeat="new in $ctrl.news">
+        <r-list-item-preview>
+          <img r-preview-icon ng-src="{{ new.image }}" alt="News Preview">
+          <preview-description>{{ new.title | uppercase | limitTo:45}}...</preview-description>
+        </r-list-item-preview>
+        <r-list-item-full>
+          <img r-full-icon ng-src="{{ new.image }}" alt="News Full">
+          <full-news-text-area>
+            <full-news-title>{{ new.title }}</full-news-title>
+            <full-news-description>{{ new.content }}</full-news-description>
+          </full-news-text-area>
+        </r-list-item-full>
+      </r-list-item>
+    </r-list>
+  </r-news-panel>
+</div>

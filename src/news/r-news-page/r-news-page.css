@@ -26,3 +26,41 @@ r-list-item.ng-enter-stagger {
   animation-delay: .1s;
   animation-duration: 0s;
 }
+
+@media screen and (max-width: 50em) {
+
+  r-news-panel {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 30em) {
+
+  .r-news-page {
+    margin: 0 15px;
+  }
+
+  r-news-panel {
+    width: 100%;
+  }
+
+  .r-news-panel-title {
+    font-size: 10px;
+  }
+
+  r-list-item-preview preview-description {
+    font-size: 10px;
+  }
+
+  r-news-panel .r-news-panel-content {
+    padding: 10px 20px;
+  }
+
+  r-list-item-full {
+    flex-direction: column;
+  }
+
+  full-news-text-area {
+    padding: 10px;
+  }
+}
