@@ -8,8 +8,11 @@ import appComponent from './app.component';
 import 'style!css!animate.css/animate.css';
 import './assets/css/styles.css';
 
+import appRoues from './app.routes';
+
 const appModule = angular
   .module('rApp',[coreModule, commonModule, newsModule])
+  .config(appRoues)
   .component('app', appComponent);
 
   angular

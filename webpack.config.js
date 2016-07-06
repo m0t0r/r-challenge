@@ -11,7 +11,8 @@ module.exports = {
   devServer: {
     contentBase: __dirname,
     inline: true,
-    stats: 'minimal'
+    stats: 'minimal',
+    historyApiFallback: true
   },
   devtools: 'source-map',
   module: {
